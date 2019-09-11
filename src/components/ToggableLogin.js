@@ -11,8 +11,8 @@ const ToggableLogin = ({ loginFunction }) => {
   const handleLogin = (event) => {
     event.preventDefault()
     if(loginFunction({ username: usernameField.value, password: passwordField.value })){
-        usernameField.setValue('')
-        passwordField.setValue('')
+        usernameField.reset()
+        passwordField.reset()
     }
   }
   return (
