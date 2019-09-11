@@ -6,13 +6,13 @@ const ToggableLogin = ({ loginFunction }) => {
   const hideShowLogin=(flag) => {
     setLogin(flag)
   }
-  const usernameField = useField('text')
-  const passwordField = useField('password')
+  const {reset:resetNameField, ...usernameField} = useField('text')
+  const {reset:resetPasswordField, ...passwordField} = useField('password')
   const handleLogin = (event) => {
     event.preventDefault()
     if(loginFunction({ username: usernameField.value, password: passwordField.value })){
-        usernameField.reset()
-        passwordField.reset()
+        resetPasswordField()
+        resetNameField()
     }
   }
   return (
