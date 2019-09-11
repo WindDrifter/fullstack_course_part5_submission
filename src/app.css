@@ -1,0 +1,15 @@
+.hideBlog{
+    display: none
+}
+
+.hideLogin{
+    display: none
+}
+
+.error.message{
+    color: red;
+    font-size: 14;
+    border: 2px;
+    border-color: red;
+
+}

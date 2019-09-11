@@ -1,0 +1,24 @@
+### 
+POST HTTP://localhost:3003/api/users
+content-type: application/json
+
+{
+    "name": "sample2 name",
+    "email": "test2@example.com",
+    "username": "sampleuser2",
+    "password": "samplepassword2"
+}
+
+### 
+POST HTTP://localhost:3003/api/login
+content-type: application/json
+
+{
+    "username": "sampleuser2",
+    "password": "samplepassword2"
+}
+
+####
+
+GET HTTP://localhost:3003/api/blogs
+content-type: application/json

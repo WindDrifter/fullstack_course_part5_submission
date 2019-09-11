@@ -1,0 +1,4 @@
+node_modules
+build
+src/tests
+src/services/__mocks__
